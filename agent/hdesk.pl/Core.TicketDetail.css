@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head prefix='og: http://ogp.me/ns#'>
+<meta charset='utf-8'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='object' property='og:type'>
+<meta content='IB Developer Portal' property='og:site_name'>
+<meta content='var/httpd/htdocs/skins/Agent/hdesk.pl/css/Core.TicketDetail.css · master-ib · IB / otrs' property='og:title'>
+<meta content="Open source OTRS system with enhancements and fixes designed by IB. See [project's wiki](https://dev.ib.pl/ib/otrs/wikis/home) for more details." property='og:description'>
+<meta content='https://dev.ib.pl/assets/gitlab_logo-f94735ed1486ec1e35ce78e4c1747b4d.png' property='og:image'>
+<meta content='https://dev.ib.pl/ib/otrs/blob/master-ib/var/httpd/htdocs/skins/Agent/hdesk.pl/css/Core.TicketDetail.css' property='og:url'>
+<meta content='summary' property='twitter:card'>
+<meta content='var/httpd/htdocs/skins/Agent/hdesk.pl/css/Core.TicketDetail.css · master-ib · IB / otrs' property='twitter:title'>
+<meta content="Open source OTRS system with enhancements and fixes designed by IB. See [project's wiki](https://dev.ib.pl/ib/otrs/wikis/home) for more details." property='twitter:description'>
+<meta content='https://dev.ib.pl/assets/gitlab_logo-f94735ed1486ec1e35ce78e4c1747b4d.png' property='twitter:image'>
+
+<title>var/httpd/htdocs/skins/Agent/hdesk.pl/css/Core.TicketDetail.css · master-ib · IB / otrs · IB Developer Portal</title>
+<meta content="Open source OTRS system with enhancements and fixes designed by IB. See [project's wiki](https://dev.ib.pl/ib/otrs/wikis/home) for more details." name='description'>
+<link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-e363a3274fd1a1a35e0ca7640160508d.ico" />
+<link rel="stylesheet" media="all" href="/assets/application-b81ddb9416a2c3797f1b1722ec7033f5.css" />
+<link rel="stylesheet" media="print" href="/assets/print-2cb1262fb60ceb73f2fe76fd1a61dccf.css" />
+<script src="/assets/application-da325dfd87be97395662ee59f5f4b1b1.js"></script>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="jS6u6n2ltUJJErVNJMaEj9cMHm6DZhWoZQzLzV8jINcsmI+9h6t57AAdBO6c/MrdaY6pBwG6i0WUpdp4+/TbHA==" />
+<script>
+//<![CDATA[
+window.gon={};gon.api_version="v3";gon.default_avatar_url="https://dev.ib.pl/assets/no_avatar-0801eb7ed213327da2a534095a75b248.png";gon.default_issues_tracker="gitlab";gon.max_file_size=10;gon.relative_url_root="";gon.user_color_scheme="white";
+//]]>
+</script>
+<meta content='origin-when-cross-origin' name='referrer'>
+<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
+<meta content='#474D57' name='theme-color'>
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/touch-icon-iphone-c2b181d197c3b7be4f8ac381458895bb.png" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/touch-icon-ipad-fede15aef7610235936a27957400503a.png" sizes="76x76" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/touch-icon-iphone-retina-88529dea2f9320df1a3cc45d92e86147.png" sizes="120x120" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/touch-icon-ipad-retina-c0dbda7e71802ee480f6d666da4b834a.png" sizes="152x152" />
+<meta content='/assets/msapplication-tile-2efcb14bec26fd879dd1914db581f8f9.png' name='msapplication-TileImage'>
+<meta content='#30353E' name='msapplication-TileColor'>
+
+
+
+<style>
+  [data-user-is] {
+    display: none !important;
+  }
+  
+  [data-user-is=""] {
+    display: block !important;
+  }
+  
+  [data-user-is=""][data-display="inline"] {
+    display: inline !important;
+  }
+  
+  [data-user-is-not] {
+    display: block !important;
+  }
+  
+  [data-user-is-not][data-display="inline"] {
+    display: inline !important;
+  }
+  
+  [data-user-is-not=""] {
+    display: none !important;
+  }
+</style>
+
+</head>
+
+<body class='ui_blue' data-page='projects:blob:show'>
+
+<header class='header-expanded navbar navbar-fixed-top navbar-gitlab'>
+<div class='container-fluid'>
+<div class='header-content'>
+<div class='pull-right'>
+<a class="btn btn-sign-in btn-success" href="/users/sign_in?redirect_to_referer=yes">Sign in</a>
+</div>
+<h1 class='title'><a href="/groups/ib">IB</a> / <a class="project-item-select-holder" href="/ib/otrs">otrs</a> &middot; <a href="/ib/otrs/tree/master-ib">Files</a></h1>
+</div>
+</div>
+</header>
+
+
+<div class='page-sidebar-expanded page-with-sidebar'>
+
+
+<div class='nicescroll sidebar-expanded sidebar-wrapper'>
+<div class='header-logo'>
+<a id='logo'>
+<svg id="tanuki-logo" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 354.24 354.24" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata3153">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(737.12,441.9007)">
+  <g id="g3107" style="enable-background:accumulate;color:#000000;" fill-rule="nonzero" fill="#d2d2d2" transform="matrix(1.25,0,0,1.25,-737.12,-1140.0232)">
+   <path id="path3109" style="enable-background:accumulate;color:#000000;" fill-rule="nonzero" fill="#d2d2d2" d="m0,841.89,134.61,0,0-134.61-134.61,0,0,134.61zm148.78-283.39,134.61,0,0,134.61-134.61,0,0-134.61zm18.225,258.93,0-85.78,17.358,0,0,85.78-17.358,0zm51.312-37.391,0,22.92,16.065,0,2.232,0,2.036-0.018,1.807-0.053,1.594-0.053,1.382-0.071,1.169-0.089,0.496-0.053,0.442-0.053,0.408-0.053,0.336-0.071,0.479-0.088,0.46-0.124,0.461-0.124,0.442-0.142,0.443-0.16,0.425-0.177,0.408-0.177,0.389-0.212,0.39-0.231,0.39-0.23,0.354-0.248,0.354-0.283,0.354-0.284,0.319-0.283,0.337-0.319,0.301-0.336,0.301-0.337,0.266-0.372,0.265-0.372,0.231-0.389,0.23-0.408,0.195-0.425,0.177-0.425,0.159-0.46,0.142-0.461,0.124-0.478,0.106-0.496,0.089-0.496,0.071-0.531,0.053-0.532,0.017-0.549,0.018-0.549-0.018-0.478-0.017-0.478-0.036-0.461-0.053-0.443-0.071-0.442-0.071-0.443-0.106-0.408-0.106-0.425-0.124-0.407-0.142-0.39-0.159-0.389-0.16-0.372-0.194-0.372-0.195-0.355-0.213-0.354-0.212-0.336-0.248-0.337-0.248-0.319-0.284-0.301-0.265-0.301-0.301-0.283-0.302-0.284-0.318-0.265-0.337-0.248-0.354-0.231-0.354-0.23-0.372-0.23-0.39-0.195-0.39-0.195-0.407-0.195-0.425-0.159-0.443-0.159-0.46-0.16-0.55-0.124-0.602-0.142-0.673-0.123-0.744-0.107-0.797-0.088-0.868-0.089-0.921-0.088-0.992-0.071-1.062-0.053-1.134-0.054-1.187-0.053-1.239-0.035-1.329-0.018-1.381-0.018-1.453,0-14.01,0zm0-34.113,0,19.838,11.371,0,1.24,0,1.187,0,1.116-0.018,1.062,0,0.992-0.018,0.939-0.018,0.868,0,0.832-0.017,0.744-0.036,0.709-0.017,0.637-0.018,0.585-0.036,0.513-0.017,0.461-0.036,0.39-0.035,0.336-0.035,0.549-0.071,0.532-0.089,0.531-0.106,0.496-0.124,0.496-0.124,0.46-0.16,0.461-0.159,0.46-0.195,0.425-0.195,0.408-0.212,0.407-0.23,0.39-0.248,0.372-0.266,0.354-0.266,0.337-0.301,0.336-0.319,0.301-0.319,0.284-0.336,0.283-0.354,0.248-0.355,0.23-0.371,0.195-0.39,0.195-0.408,0.159-0.407,0.16-0.425,0.124-0.443,0.106-0.443,0.089-0.478,0.07-0.46,0.054-0.496,0.035-0.496,0-0.514,0-0.496-0.035-0.478-0.036-0.478-0.053-0.461-0.089-0.443-0.088-0.425-0.106-0.425-0.124-0.407-0.16-0.407-0.159-0.39-0.177-0.372-0.195-0.354-0.213-0.355-0.23-0.336-0.248-0.337-0.266-0.318-0.283-0.302-0.301-0.283-0.319-0.266-0.336-0.265-0.355-0.248-0.372-0.213-0.372-0.212-0.407-0.195-0.425-0.177-0.425-0.177-0.461-0.142-0.46-0.124-0.478-0.124-0.496-0.106-0.514-0.089-0.549-0.071-0.354-0.035-0.425-0.036-0.514-0.035-0.602-0.018-0.656-0.035-0.744-0.018-0.814-0.018-0.886-0.017-0.956-0.018-1.045-0.018-1.116-0.017-1.187-0.018-1.275,0-1.346,0-1.417-0.018-1.488,0-9.972,0zm-17.375-14.276,34.379,0,1.257,0,1.205,0.018,1.186,0.018,1.134,0.017,1.08,0.036,1.063,0.035,1.01,0.036,0.974,0.053,0.939,0.053,0.885,0.071,0.85,0.071,0.815,0.071,0.762,0.088,0.726,0.089,0.691,0.106,0.655,0.106,0.62,0.106,0.62,0.124,0.602,0.142,0.584,0.16,0.603,0.159,0.584,0.195,0.567,0.195,0.567,0.212,0.549,0.23,0.549,0.248,0.531,0.248,0.549,0.284,0.514,0.283,0.514,0.301,0.513,0.319,0.496,0.319,0.496,0.354,0.478,0.354,0.461,0.372,0.46,0.372,0.443,0.408,0.443,0.407,0.425,0.425,0.425,0.443,0.39,0.46,0.407,0.461,0.39,0.496,0.372,0.496,0.354,0.513,0.354,0.514,0.355,0.549,0.336,0.549,0.319,0.567,0.301,0.567,0.266,0.584,0.265,0.585,0.231,0.602,0.23,0.602,0.195,0.62,0.177,0.62,0.142,0.62,0.141,0.638,0.106,0.655,0.107,0.655,0.071,0.673,0.053,0.673,0.017,0.673,0.018,0.691-0.018,0.744-0.035,0.744-0.053,0.744-0.089,0.726-0.124,0.709-0.141,0.708-0.16,0.709-0.195,0.69-0.212,0.691-0.248,0.673-0.266,0.673-0.283,0.673-0.319,0.656-0.337,0.655-0.371,0.638-0.39,0.637-0.425,0.62-0.425,0.585-0.461,0.584-0.478,0.567-0.478,0.531-0.514,0.532-0.514,0.496-0.549,0.478-0.566,0.46-0.567,0.443-0.602,0.425-0.62,0.408-0.62,0.372-0.656,0.371-0.673,0.337-0.673,0.337,0.957,0.283,0.938,0.336,0.904,0.337,0.885,0.372,0.851,0.407,0.832,0.425,0.407,0.213,0.39,0.23,0.39,0.23,0.389,0.248,0.372,0.248,0.355,0.248,0.372,0.248,0.354,0.266,0.336,0.283,0.337,0.266,0.336,0.283,0.319,0.302,0.319,0.283,0.319,0.319,0.301,0.301,0.283,0.319,0.301,0.318,0.266,0.319,0.283,0.337,0.266,0.336,0.266,0.355,0.248,0.354,0.248,0.354,0.23,0.354,0.23,0.355,0.213,0.372,0.212,0.371,0.195,0.372,0.195,0.372,0.195,0.372,0.177,0.39,0.159,0.39,0.178,0.389,0.141,0.39,0.142,0.407,0.142,0.408,0.124,0.389,0.124,0.425,0.106,0.408,0.106,0.425,0.177,0.832,0.16,0.868,0.106,0.868,0.088,0.903,0.036,0.904,0.018,0.921,0,0.726-0.036,0.726-0.053,0.726-0.071,0.727-0.106,0.708-0.106,0.726-0.142,0.709-0.159,0.708-0.178,0.726-0.194,0.691-0.231,0.709-0.248,0.708-0.265,0.709-0.284,0.69-0.318,0.691-0.319,0.709-0.355,0.673-0.372,0.655-0.371,0.655-0.39,0.62-0.425,0.62-0.425,0.602-0.443,0.567-0.443,0.567-0.478,0.549-0.496,0.514-0.496,0.513-0.531,0.496-0.532,0.479-0.549,0.442-0.567,0.443-0.584,0.425-0.585,0.408-0.619,0.372-0.638,0.372-0.655,0.336-0.656,0.319-0.691,0.301-0.708,0.283-0.709,0.266-0.743,0.248-0.744,0.23-0.78,0.195-0.779,0.195-0.815,0.159-0.814,0.16-0.851,0.124-0.85,0.106-0.602,0.053-0.673,0.053-0.779,0.053-0.886,0.036-0.974,0.053-1.063,0.035-1.169,0.054-1.257,0.035-1.364,0.035-1.453,0.036-1.541,0.018-1.647,0.035-1.736,0.018-1.842,0.035-1.93,0.018-2.019,0.018-29.278,0,0-85.78zm-200.94-173.15h134.61v134.61h-134.61v-134.61z"/>
+  </g>
+ </g>
+</svg>
+
+</a>
+<a class="gitlab-text-container-link" title="Dashboard" id="js-shortcuts-home" href="/"><div class='gitlab-text-container'>
+<h3>IB Developer Portal</h3>
+</div>
+</a></div>
+<ul class='nav nav-sidebar'>
+<li class=""><a title="Go to group" class="back-link" href="/groups/ib"><i class="fa fa-caret-square-o-left fa-fw"></i>
+<span>
+Go to group
+</span>
+</a></li><li class='separate-item'></li>
+<li class="home"><a title="Project" class="shortcuts-project" href="/ib/otrs"><i class="fa fa-home fa-fw"></i>
+<span>
+Project
+</span>
+</a></li><li class=""><a title="Activity" class="shortcuts-project-activity" href="/ib/otrs/activity"><i class="fa fa-dashboard fa-fw"></i>
+<span>
+Activity
+</span>
+</a></li><li class="active"><a title="Files" class="shortcuts-tree" href="/ib/otrs/tree/master-ib"><i class="fa fa-files-o fa-fw"></i>
+<span>
+Files
+</span>
+</a></li><li class=""><a title="Commits" class="shortcuts-commits" href="/ib/otrs/commits/master-ib"><i class="fa fa-history fa-fw"></i>
+<span>
+Commits
+</span>
+</a></li><li class=""><a title="Graphs" class="shortcuts-graphs" href="/ib/otrs/graphs/master-ib"><i class="fa fa-area-chart fa-fw"></i>
+<span>
+Graphs
+</span>
+</a></li><li class=""><a title="Milestones" href="/ib/otrs/milestones"><i class="fa fa-clock-o fa-fw"></i>
+<span>
+Milestones
+</span>
+</a></li><li class=""><a title="Issues" class="shortcuts-issues" href="/ib/otrs/issues"><i class="fa fa-exclamation-circle fa-fw"></i>
+<span>
+Issues
+<span class='count issue_counter'>0</span>
+</span>
+</a></li><li class=""><a title="Merge Requests" class="shortcuts-merge_requests" href="/ib/otrs/merge_requests"><i class="fa fa-tasks fa-fw"></i>
+<span>
+Merge Requests
+<span class='count merge_counter'>0</span>
+</span>
+</a></li><li class=""><a title="Labels" href="/ib/otrs/labels"><i class="fa fa-tags fa-fw"></i>
+<span>
+Labels
+</span>
+</a></li><li class=""><a title="Wiki" class="shortcuts-wiki" href="/ib/otrs/wikis/home"><i class="fa fa-book fa-fw"></i>
+<span>
+Wiki
+</span>
+</a></li><li class=""><a title="Forks" href="/ib/otrs/forks"><i class="fa fa-code-fork fa-fw"></i>
+<span>
+Forks
+</span>
+</a></li><li class='hidden'>
+<a title="Network" class="shortcuts-network" href="/ib/otrs/network/master-ib">Network
+</a></li>
+</ul>
+
+<div class='collapse-nav'>
+<a class="toggle-nav-collapse" title="Open/Close" href="#"><i class="fa fa-angle-left"></i></a>
+
+</div>
+</div>
+<div class='content-wrapper'>
+<div class='flash-container'>
+</div>
+
+
+<div class='container-fluid container-limited'>
+<div class='content'>
+<div class='clearfix'>
+
+
+<div class='tree-holder' id='tree-holder'>
+<div class='nav-block'>
+<div class='tree-ref-holder'>
+<form class="project-refs-form" action="/ib/otrs/refs/switch" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<select name="ref" id="ref" class="project-refs-select select2 select2-sm"><optgroup label="Branches"><option selected="selected" value="master-ib">master-ib</option>
+<option value="rel-3_3-ib">rel-3_3-ib</option>
+<option value="rel-5_0-ib">rel-5_0-ib</option></optgroup><optgroup label="Tags"></optgroup></select>
+<input type="hidden" name="destination" id="destination" value="blob" />
+<input type="hidden" name="path" id="path" value="var/httpd/htdocs/skins/Agent/hdesk.pl/css/Core.TicketDetail.css" />
+</form>
+
+
+</div>
+<ul class='breadcrumb repo-breadcrumb'>
+<li>
+<a href="/ib/otrs/tree/master-ib">otrs
+</a></li>
+<li>
+<a href="#">..</a>
+</li>
+<li>
+<a href="/ib/otrs/tree/master-ib/var/httpd/htdocs/skins/Agent/hdesk.pl/css">css</a>
+</li>
+<li>
+<a href="/ib/otrs/blob/master-ib/var/httpd/htdocs/skins/Agent/hdesk.pl/css/Core.TicketDetail.css"><strong>
+Core.TicketDetail.css
+</strong>
+</a></li>
+</ul>
+</div>
+<ul class='blob-commit-info hidden-xs'>
+<li class='commit js-toggle-container' id='commit-5cf66509'>
+<div class='commit-row-title'>
+<span class='item-title str-truncated'>
+<a class="commit-row-message" href="/ib/otrs/commit/5cf6650932f69f37e17ace4af2691d58ef871075">hdesk.pl skin added (IB#1047726)</a>
+</span>
+<div class='pull-right'>
+<button class="btn btn-clipboard" data-clipboard-text="5cf6650932f69f37e17ace4af2691d58ef871075" type="button"><i class="fa fa-clipboard"></i></button>
+<a class="commit_short_id" href="/ib/otrs/commit/5cf6650932f69f37e17ace4af2691d58ef871075">5cf66509</a>
+</div>
+<div class='notes_count'>
+</div>
+</div>
+<div class='commit-row-info'>
+<a class="commit-author-link has_tooltip" data-original-title="pawel.boguslawski@ib.pl" href="/u/pboguslawski"><img class="avatar s24" width="24" alt="" src="https://dev.ib.pl/uploads/user/avatar/2/pboguslawski.jpg" /> <span class="commit-author-name">Paweł Bogusławski</span></a>
+authored
+<div class='committed_ago'>
+<time class="time_ago js-timeago js-timeago-pending" datetime="2015-12-11T20:21:34Z" title="Dec 11, 2015 8:21pm" data-toggle="tooltip" data-placement="top" data-container="body">2015-12-11 21:21:34 +0100</time> &nbsp;
+</div>
+<a class="pull-right" href="/ib/otrs/tree/5cf6650932f69f37e17ace4af2691d58ef871075">Browse Files »</a>
+</div>
+</li>
+
+</ul>
+<div class='blob-content-holder' id='blob-content-holder'>
+<article class='file-holder'>
+<div class='file-title'>
+<i class="fa fa-file-text-o fa-fw"></i>
+<strong>
+Core.TicketDetail.css
+</strong>
+<small>
+2.93 KB
+</small>
+<div class='file-actions hidden-xs'>
+<div class='btn-group tree-btn-group'>
+<a class="btn btn-sm" target="_blank" href="/ib/otrs/raw/master-ib/var/httpd/htdocs/skins/Agent/hdesk.pl/css/Core.TicketDetail.css">Raw</a>
+<a class="btn btn-sm" href="/ib/otrs/blame/master-ib/var/httpd/htdocs/skins/Agent/hdesk.pl/css/Core.TicketDetail.css">Blame</a>
+<a class="btn btn-sm" href="/ib/otrs/commits/master-ib/var/httpd/htdocs/skins/Agent/hdesk.pl/css/Core.TicketDetail.css">History</a>
+<a class="btn btn-sm" href="/ib/otrs/blob/fd2a5490de6d124b71a71caec2646b60664867a3/var/httpd/htdocs/skins/Agent/hdesk.pl/css/Core.TicketDetail.css">Permalink</a>
+</div>
+
+</div>
+</div>
+<div class='file-content code js-syntax-highlight'>
+<div class='line-numbers'>
+<a class='diff-line-num' data-line-number='1' href='#L1' id='L1'>
+<i class='fa fa-link'></i>
+1
+</a>
+<a class='diff-line-num' data-line-number='2' href='#L2' id='L2'>
+<i class='fa fa-link'></i>
+2
+</a>
+<a class='diff-line-num' data-line-number='3' href='#L3' id='L3'>
+<i class='fa fa-link'></i>
+3
+</a>
+<a class='diff-line-num' data-line-number='4' href='#L4' id='L4'>
+<i class='fa fa-link'></i>
+4
+</a>
+<a class='diff-line-num' data-line-number='5' href='#L5' id='L5'>
+<i class='fa fa-link'></i>
+5
+</a>
+<a class='diff-line-num' data-line-number='6' href='#L6' id='L6'>
+<i class='fa fa-link'></i>
+6
+</a>
+<a class='diff-line-num' data-line-number='7' href='#L7' id='L7'>
+<i class='fa fa-link'></i>
+7
+</a>
+<a class='diff-line-num' data-line-number='8' href='#L8' id='L8'>
+<i class='fa fa-link'></i>
+8
+</a>
+<a class='diff-line-num' data-line-number='9' href='#L9' id='L9'>
+<i class='fa fa-link'></i>
+9
+</a>
+<a class='diff-line-num' data-line-number='10' href='#L10' id='L10'>
+<i class='fa fa-link'></i>
+10
+</a>
+<a class='diff-line-num' data-line-number='11' href='#L11' id='L11'>
+<i class='fa fa-link'></i>
+11
+</a>
+<a class='diff-line-num' data-line-number='12' href='#L12' id='L12'>
+<i class='fa fa-link'></i>
+12
+</a>
+<a class='diff-line-num' data-line-number='13' href='#L13' id='L13'>
+<i class='fa fa-link'></i>
+13
+</a>
+<a class='diff-line-num' data-line-number='14' href='#L14' id='L14'>
+<i class='fa fa-link'></i>
+14
+</a>
+<a class='diff-line-num' data-line-number='15' href='#L15' id='L15'>
+<i class='fa fa-link'></i>
+15
+</a>
+<a class='diff-line-num' data-line-number='16' href='#L16' id='L16'>
+<i class='fa fa-link'></i>
+16
+</a>
+<a class='diff-line-num' data-line-number='17' href='#L17' id='L17'>
+<i class='fa fa-link'></i>
+17
+</a>
+<a class='diff-line-num' data-line-number='18' href='#L18' id='L18'>
+<i class='fa fa-link'></i>
+18
+</a>
+<a class='diff-line-num' data-line-number='19' href='#L19' id='L19'>
+<i class='fa fa-link'></i>
+19
+</a>
+<a class='diff-line-num' data-line-number='20' href='#L20' id='L20'>
+<i class='fa fa-link'></i>
+20
+</a>
+<a class='diff-line-num' data-line-number='21' href='#L21' id='L21'>
+<i class='fa fa-link'></i>
+21
+</a>
+<a class='diff-line-num' data-line-number='22' href='#L22' id='L22'>
+<i class='fa fa-link'></i>
+22
+</a>
+<a class='diff-line-num' data-line-number='23' href='#L23' id='L23'>
+<i class='fa fa-link'></i>
+23
+</a>
+<a class='diff-line-num' data-line-number='24' href='#L24' id='L24'>
+<i class='fa fa-link'></i>
+24
+</a>
+<a class='diff-line-num' data-line-number='25' href='#L25' id='L25'>
+<i class='fa fa-link'></i>
+25
+</a>
+<a class='diff-line-num' data-line-number='26' href='#L26' id='L26'>
+<i class='fa fa-link'></i>
+26
+</a>
+<a class='diff-line-num' data-line-number='27' href='#L27' id='L27'>
+<i class='fa fa-link'></i>
+27
+</a>
+<a class='diff-line-num' data-line-number='28' href='#L28' id='L28'>
+<i class='fa fa-link'></i>
+28
+</a>
+<a class='diff-line-num' data-line-number='29' href='#L29' id='L29'>
+<i class='fa fa-link'></i>
+29
+</a>
+<a class='diff-line-num' data-line-number='30' href='#L30' id='L30'>
+<i class='fa fa-link'></i>
+30
+</a>
+<a class='diff-line-num' data-line-number='31' href='#L31' id='L31'>
+<i class='fa fa-link'></i>
+31
+</a>
+<a class='diff-line-num' data-line-number='32' href='#L32' id='L32'>
+<i class='fa fa-link'></i>
+32
+</a>
+<a class='diff-line-num' data-line-number='33' href='#L33' id='L33'>
+<i class='fa fa-link'></i>
+33
+</a>
+<a class='diff-line-num' data-line-number='34' href='#L34' id='L34'>
+<i class='fa fa-link'></i>
+34
+</a>
+<a class='diff-line-num' data-line-number='35' href='#L35' id='L35'>
+<i class='fa fa-link'></i>
+35
+</a>
+<a class='diff-line-num' data-line-number='36' href='#L36' id='L36'>
+<i class='fa fa-link'></i>
+36
+</a>
+<a class='diff-line-num' data-line-number='37' href='#L37' id='L37'>
+<i class='fa fa-link'></i>
+37
+</a>
+<a class='diff-line-num' data-line-number='38' href='#L38' id='L38'>
+<i class='fa fa-link'></i>
+38
+</a>
+<a class='diff-line-num' data-line-number='39' href='#L39' id='L39'>
+<i class='fa fa-link'></i>
+39
+</a>
+<a class='diff-line-num' data-line-number='40' href='#L40' id='L40'>
+<i class='fa fa-link'></i>
+40
+</a>
+<a class='diff-line-num' data-line-number='41' href='#L41' id='L41'>
+<i class='fa fa-link'></i>
+41
+</a>
+<a class='diff-line-num' data-line-number='42' href='#L42' id='L42'>
+<i class='fa fa-link'></i>
+42
+</a>
+<a class='diff-line-num' data-line-number='43' href='#L43' id='L43'>
+<i class='fa fa-link'></i>
+43
+</a>
+<a class='diff-line-num' data-line-number='44' href='#L44' id='L44'>
+<i class='fa fa-link'></i>
+44
+</a>
+<a class='diff-line-num' data-line-number='45' href='#L45' id='L45'>
+<i class='fa fa-link'></i>
+45
+</a>
+<a class='diff-line-num' data-line-number='46' href='#L46' id='L46'>
+<i class='fa fa-link'></i>
+46
+</a>
+<a class='diff-line-num' data-line-number='47' href='#L47' id='L47'>
+<i class='fa fa-link'></i>
+47
+</a>
+<a class='diff-line-num' data-line-number='48' href='#L48' id='L48'>
+<i class='fa fa-link'></i>
+48
+</a>
+<a class='diff-line-num' data-line-number='49' href='#L49' id='L49'>
+<i class='fa fa-link'></i>
+49
+</a>
+<a class='diff-line-num' data-line-number='50' href='#L50' id='L50'>
+<i class='fa fa-link'></i>
+50
+</a>
+<a class='diff-line-num' data-line-number='51' href='#L51' id='L51'>
+<i class='fa fa-link'></i>
+51
+</a>
+<a class='diff-line-num' data-line-number='52' href='#L52' id='L52'>
+<i class='fa fa-link'></i>
+52
+</a>
+<a class='diff-line-num' data-line-number='53' href='#L53' id='L53'>
+<i class='fa fa-link'></i>
+53
+</a>
+<a class='diff-line-num' data-line-number='54' href='#L54' id='L54'>
+<i class='fa fa-link'></i>
+54
+</a>
+<a class='diff-line-num' data-line-number='55' href='#L55' id='L55'>
+<i class='fa fa-link'></i>
+55
+</a>
+<a class='diff-line-num' data-line-number='56' href='#L56' id='L56'>
+<i class='fa fa-link'></i>
+56
+</a>
+<a class='diff-line-num' data-line-number='57' href='#L57' id='L57'>
+<i class='fa fa-link'></i>
+57
+</a>
+<a class='diff-line-num' data-line-number='58' href='#L58' id='L58'>
+<i class='fa fa-link'></i>
+58
+</a>
+<a class='diff-line-num' data-line-number='59' href='#L59' id='L59'>
+<i class='fa fa-link'></i>
+59
+</a>
+<a class='diff-line-num' data-line-number='60' href='#L60' id='L60'>
+<i class='fa fa-link'></i>
+60
+</a>
+<a class='diff-line-num' data-line-number='61' href='#L61' id='L61'>
+<i class='fa fa-link'></i>
+61
+</a>
+<a class='diff-line-num' data-line-number='62' href='#L62' id='L62'>
+<i class='fa fa-link'></i>
+62
+</a>
+<a class='diff-line-num' data-line-number='63' href='#L63' id='L63'>
+<i class='fa fa-link'></i>
+63
+</a>
+<a class='diff-line-num' data-line-number='64' href='#L64' id='L64'>
+<i class='fa fa-link'></i>
+64
+</a>
+<a class='diff-line-num' data-line-number='65' href='#L65' id='L65'>
+<i class='fa fa-link'></i>
+65
+</a>
+<a class='diff-line-num' data-line-number='66' href='#L66' id='L66'>
+<i class='fa fa-link'></i>
+66
+</a>
+<a class='diff-line-num' data-line-number='67' href='#L67' id='L67'>
+<i class='fa fa-link'></i>
+67
+</a>
+<a class='diff-line-num' data-line-number='68' href='#L68' id='L68'>
+<i class='fa fa-link'></i>
+68
+</a>
+<a class='diff-line-num' data-line-number='69' href='#L69' id='L69'>
+<i class='fa fa-link'></i>
+69
+</a>
+<a class='diff-line-num' data-line-number='70' href='#L70' id='L70'>
+<i class='fa fa-link'></i>
+70
+</a>
+<a class='diff-line-num' data-line-number='71' href='#L71' id='L71'>
+<i class='fa fa-link'></i>
+71
+</a>
+<a class='diff-line-num' data-line-number='72' href='#L72' id='L72'>
+<i class='fa fa-link'></i>
+72
+</a>
+<a class='diff-line-num' data-line-number='73' href='#L73' id='L73'>
+<i class='fa fa-link'></i>
+73
+</a>
+<a class='diff-line-num' data-line-number='74' href='#L74' id='L74'>
+<i class='fa fa-link'></i>
+74
+</a>
+<a class='diff-line-num' data-line-number='75' href='#L75' id='L75'>
+<i class='fa fa-link'></i>
+75
+</a>
+<a class='diff-line-num' data-line-number='76' href='#L76' id='L76'>
+<i class='fa fa-link'></i>
+76
+</a>
+<a class='diff-line-num' data-line-number='77' href='#L77' id='L77'>
+<i class='fa fa-link'></i>
+77
+</a>
+<a class='diff-line-num' data-line-number='78' href='#L78' id='L78'>
+<i class='fa fa-link'></i>
+78
+</a>
+<a class='diff-line-num' data-line-number='79' href='#L79' id='L79'>
+<i class='fa fa-link'></i>
+79
+</a>
+<a class='diff-line-num' data-line-number='80' href='#L80' id='L80'>
+<i class='fa fa-link'></i>
+80
+</a>
+<a class='diff-line-num' data-line-number='81' href='#L81' id='L81'>
+<i class='fa fa-link'></i>
+81
+</a>
+<a class='diff-line-num' data-line-number='82' href='#L82' id='L82'>
+<i class='fa fa-link'></i>
+82
+</a>
+<a class='diff-line-num' data-line-number='83' href='#L83' id='L83'>
+<i class='fa fa-link'></i>
+83
+</a>
+<a class='diff-line-num' data-line-number='84' href='#L84' id='L84'>
+<i class='fa fa-link'></i>
+84
+</a>
+<a class='diff-line-num' data-line-number='85' href='#L85' id='L85'>
+<i class='fa fa-link'></i>
+85
+</a>
+<a class='diff-line-num' data-line-number='86' href='#L86' id='L86'>
+<i class='fa fa-link'></i>
+86
+</a>
+<a class='diff-line-num' data-line-number='87' href='#L87' id='L87'>
+<i class='fa fa-link'></i>
+87
+</a>
+<a class='diff-line-num' data-line-number='88' href='#L88' id='L88'>
+<i class='fa fa-link'></i>
+88
+</a>
+<a class='diff-line-num' data-line-number='89' href='#L89' id='L89'>
+<i class='fa fa-link'></i>
+89
+</a>
+<a class='diff-line-num' data-line-number='90' href='#L90' id='L90'>
+<i class='fa fa-link'></i>
+90
+</a>
+<a class='diff-line-num' data-line-number='91' href='#L91' id='L91'>
+<i class='fa fa-link'></i>
+91
+</a>
+<a class='diff-line-num' data-line-number='92' href='#L92' id='L92'>
+<i class='fa fa-link'></i>
+92
+</a>
+<a class='diff-line-num' data-line-number='93' href='#L93' id='L93'>
+<i class='fa fa-link'></i>
+93
+</a>
+</div>
+<div class='blob-content' data-blob-id='12c9cbe19b07ebdcf085eaafea89f601e2b56869'>
+<pre class="code highlight"><code><span id="LC1" class="line"><span class="c">/**</span></span>
+<span id="LC2" class="line"><span class="c"> * Core.TicketDetail.css mod for hdesk.pl skin</span></span>
+<span id="LC3" class="line"><span class="c"> *</span></span>
+<span id="LC4" class="line"><span class="c"> * @project     OTRS (http://www.otrs.org) - Agent Frontend</span></span>
+<span id="LC5" class="line"><span class="c"> * @copyright   Informatyka Boguslawski sp. z o.o. sp.k., http://www.ib.pl/</span></span>
+<span id="LC6" class="line"><span class="c"> * @license     AGPL (http://www.gnu.org/licenses/agpl.txt)</span></span>
+<span id="LC7" class="line"><span class="c"> */</span></span>
+<span id="LC8" class="line"></span>
+<span id="LC9" class="line"><span class="c">/**</span></span>
+<span id="LC10" class="line"><span class="c"> * @package     Skin &quot;hdesk.pl&quot;</span></span>
+<span id="LC11" class="line"><span class="c"> */</span></span>
+<span id="LC12" class="line"></span>
+<span id="LC13" class="line"><span class="k">@media</span> <span class="n">screen</span><span class="p">,</span><span class="n">projection</span><span class="p">,</span><span class="n">tv</span><span class="p">,</span><span class="n">handheld</span> <span class="p">{</span></span>
+<span id="LC14" class="line"></span>
+<span id="LC15" class="line"><span class="c">/* 320 */</span></span>
+<span id="LC16" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.agent-phone</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC17" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.agent-phone</span> <span class="nc">.Header</span> <span class="p">{</span></span>
+<span id="LC18" class="line">    <span class="nl">background</span><span class="p">:</span> <span class="m">#E1FFE1</span> <span class="cp">!important</span><span class="p">;</span></span>
+<span id="LC19" class="line"><span class="p">}</span></span>
+<span id="LC20" class="line"></span>
+<span id="LC21" class="line"><span class="c">/* 324 */</span></span>
+<span id="LC22" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.agent-email-external</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC23" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.agent-email-external</span> <span class="nc">.Header</span> <span class="p">{</span></span>
+<span id="LC24" class="line">    <span class="nl">background</span><span class="p">:</span> <span class="m">#E1FFE1</span> <span class="cp">!important</span><span class="p">;</span></span>
+<span id="LC25" class="line"><span class="p">}</span></span>
+<span id="LC26" class="line"></span>
+<span id="LC27" class="line"><span class="c">/* 328 */</span></span>
+<span id="LC28" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.agent-email-internal</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC29" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.agent-email-internal</span> <span class="nc">.Header</span> <span class="p">{</span></span>
+<span id="LC30" class="line">    <span class="nl">background</span><span class="p">:</span> <span class="m">#FFE1E1</span> <span class="cp">!important</span><span class="p">;</span></span>
+<span id="LC31" class="line"><span class="p">}</span></span>
+<span id="LC32" class="line"></span>
+<span id="LC33" class="line"><span class="c">/* 332 */</span></span>
+<span id="LC34" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.agent-note-external</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC35" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.agent-note-external</span> <span class="nc">.Header</span> <span class="p">{</span></span>
+<span id="LC36" class="line">    <span class="nl">background</span><span class="p">:</span> <span class="m">#E1FFE1</span> <span class="cp">!important</span><span class="p">;</span></span>
+<span id="LC37" class="line"><span class="p">}</span></span>
+<span id="LC38" class="line"></span>
+<span id="LC39" class="line"><span class="c">/* 336 */</span></span>
+<span id="LC40" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.agent-note-internal</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC41" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.agent-note-internal</span> <span class="nc">.Header</span> <span class="p">{</span></span>
+<span id="LC42" class="line">    <span class="nl">background</span><span class="p">:</span> <span class="m">#FFE1E1</span> <span class="cp">!important</span><span class="p">;</span></span>
+<span id="LC43" class="line"><span class="p">}</span></span>
+<span id="LC44" class="line"></span>
+<span id="LC45" class="line"><span class="c">/* 344 */</span></span>
+<span id="LC46" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.system-note-internal</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC47" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.system-note-internal</span> <span class="nc">.Header</span><span class="o">,</span></span>
+<span id="LC48" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.system-note-external</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC49" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.system-note-external</span> <span class="nc">.Header</span><span class="o">,</span></span>
+<span id="LC50" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.system-note-report</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC51" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.system-note-report</span> <span class="nc">.Header</span><span class="o">,</span></span>
+<span id="LC52" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.system-email-external</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC53" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.system-email-external</span> <span class="nc">.Header</span><span class="o">,</span></span>
+<span id="LC54" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.system-email-internal</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC55" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.system-email-internal</span> <span class="nc">.Header</span><span class="o">,</span></span>
+<span id="LC56" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.system-email-notification-int</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC57" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.system-email-notification-int</span> <span class="nc">.Header</span><span class="o">,</span></span>
+<span id="LC58" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.system-email-notification-ext</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC59" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.system-email-notification-ext</span> <span class="nc">.Header</span> <span class="p">{</span></span>
+<span id="LC60" class="line">    <span class="nl">background</span><span class="p">:</span> <span class="m">#FFFFCC</span> <span class="cp">!important</span><span class="p">;</span></span>
+<span id="LC61" class="line"><span class="p">}</span></span>
+<span id="LC62" class="line"></span>
+<span id="LC63" class="line"><span class="c">/* 365 */</span></span>
+<span id="LC64" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.customer-webrequest</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC65" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.customer-webrequest</span> <span class="nc">.Header</span><span class="o">,</span></span>
+<span id="LC66" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.customer-email-external</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC67" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.customer-email-external</span> <span class="nc">.Header</span><span class="o">,</span></span>
+<span id="LC68" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.customer-note-external</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC69" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.customer-note-external</span> <span class="nc">.Header</span><span class="o">,</span></span>
+<span id="LC70" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.customer-phone</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC71" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.customer-phone</span> <span class="nc">.Header</span> <span class="p">{</span></span>
+<span id="LC72" class="line">    <span class="nl">background</span><span class="p">:</span> <span class="m">#E1EBF4</span> <span class="cp">!important</span><span class="p">;</span></span>
+<span id="LC73" class="line"><span class="p">}</span></span>
+<span id="LC74" class="line"></span>
+<span id="LC75" class="line"><span class="c">/* 376 */</span></span>
+<span id="LC76" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.agent-phone</span><span class="nd">:hover</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC77" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.agent-email-external</span><span class="nd">:hover</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC78" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.agent-email-internal</span><span class="nd">:hover</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC79" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.agent-note-external</span><span class="nd">:hover</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC80" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.agent-note-internal</span><span class="nd">:hover</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC81" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.system-note-internal</span><span class="nd">:hover</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC82" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.system-note-external</span><span class="nd">:hover</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC83" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.system-note-report</span><span class="nd">:hover</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC84" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.system-email-external</span><span class="nd">:hover</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC85" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.system-email-internal</span><span class="nd">:hover</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC86" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.customer-webrequest</span><span class="nd">:hover</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC87" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.customer-email-external</span><span class="nd">:hover</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC88" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.customer-note-external</span><span class="nd">:hover</span> <span class="o">&gt;</span> <span class="nt">td</span><span class="o">,</span></span>
+<span id="LC89" class="line"><span class="nc">.UseArticleColors</span> <span class="nc">.customer-phone</span><span class="nd">:hover</span> <span class="o">&gt;</span> <span class="nt">td</span> <span class="p">{</span></span>
+<span id="LC90" class="line">    <span class="nl">background</span><span class="p">:</span> <span class="m">#CBDCEA</span> <span class="cp">!important</span><span class="p">;</span></span>
+<span id="LC91" class="line"><span class="p">}</span></span>
+<span id="LC92" class="line"></span>
+<span id="LC93" class="line"><span class="p">}</span> <span class="c">/* end @media */</span></span></code></pre>
+
+</div>
+</div>
+
+
+</article>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+<hr>
+<div id='footer'>
+IB Developer Portal ©
+2000-2016
+<a target="blank" href="http://www.ib.pl/en/about-us.html">Informatyka Bogusławski sp. z o.o. sp.k.</a>
+<br>
+Cookie Information: This page uses cookies to provide you with a better user experience and for statistical purposes.
+If you do not block cookies, you consent to use them and store them in the memory of your device.
+<a target="blank" href="http://www.ib.pl/en/privacy-policy.html">Read more...</a>
+<img alt='piwik' src='https://stats.ib.pl/piwik.php?idsite=14&amp;rec=1' style='border:0'>
+
+</div>
+
+</div>
+</div>
+
+
+
+</body>
+</html>
+
